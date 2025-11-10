@@ -1,0 +1,34 @@
+{
+    "name": "lemukarram/toon",
+    "description": "A compact, token-efficient data format for AI prompts, developed by Tech With Muk.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mukarram Hussain",
+            "email": "le.mukarram@gmail.com",
+            "homepage": "https://github.com/lemukarram",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LeMukarram\\Toon\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LeMukarram\\Toon\\ToonServiceProvider"
+            ],
+            "aliases": {
+                "Toon": "LeMukarram\\Toon\\Facades\\Toon"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
